@@ -105,7 +105,7 @@ public final class MethodDescriptor {
 	 * @param method a actual class method to be associated with this prefix
 	 * @return a "setter" method descriptor
 	 */
-	static MethodDescriptor setter(String prefix, Method method) {
+	public static MethodDescriptor setter(String prefix, Method method) {
 		return new MethodDescriptor(prefix, method.getName(), method.getParameterTypes()[0], null);
 	}
 
@@ -115,7 +115,7 @@ public final class MethodDescriptor {
 	 * @param method a actual class method to be associated with this prefix
 	 * @return a "getter" method descriptor
 	 */
-	static MethodDescriptor getter(String prefix, Method method) {
+	public static MethodDescriptor getter(String prefix, Method method) {
 		return new MethodDescriptor(prefix, method.getName(), null, method.getReturnType());
 	}
 

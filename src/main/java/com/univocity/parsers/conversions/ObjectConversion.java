@@ -65,7 +65,7 @@ public abstract class ObjectConversion<T> extends NullConversion<String, T> {
 	 *
 	 * @return an instance of <b>T</b>, converted from the String input.
 	 */
-	protected final T fromInput(String input) {
+	public final T fromInput(String input) {
 		return fromString(input);
 	}
 

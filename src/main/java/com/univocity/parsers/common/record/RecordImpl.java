@@ -19,12 +19,12 @@ import com.univocity.parsers.conversions.*;
 import java.math.*;
 import java.util.*;
 
-class RecordImpl<C extends Context> implements Record {
+public class RecordImpl<C extends Context> implements Record {
 
 	private final String[] data;
 	private final RecordMetaDataImpl<C> metaData;
 
-	RecordImpl(String[] data, RecordMetaDataImpl metaData) {
+	public RecordImpl(String[] data, RecordMetaDataImpl metaData) {
 		this.data = data;
 		this.metaData = metaData;
 	}

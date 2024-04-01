@@ -24,7 +24,7 @@ import com.univocity.parsers.conversions.*;
 import java.lang.annotation.*;
 import java.util.*;
 
-class RecordMetaDataImpl<C extends Context> implements RecordMetaData {
+public class RecordMetaDataImpl<C extends Context> implements RecordMetaData {
 
 	final C context;
 
